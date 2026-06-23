@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wi-Fi Nebula</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <span class="logo">&#9670; nebula</span>
+    <span id="quality-badge" class="badge">scanning…</span>
+  </header>
+
+  <main>
+    <div id="canvas-wrap"></div>
+
+    <div id="stats">
+      <div class="stat">
+        <span class="stat-label">connection</span>
+        <span class="stat-val" id="s-type">—</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">downlink</span>
+        <span class="stat-val" id="s-dl">—</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">rtt</span>
+        <span class="stat-val" id="s-rtt">—</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">ping</span>
+        <span class="stat-val" id="s-ping">—</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">signal</span>
+        <span class="stat-val" id="s-sig">—</span>
+      </div>
+    </div>
+
+    <p class="note" id="note">Measuring your connection…</p>
+  </main>
+
+  <script src="signal.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
+
+
